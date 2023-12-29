@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine Foto Galerie</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="imprint.css">
+    <script src="script.js"></script>
+
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="0460a567-6eba-4899-a055-0b271c957ca6"
+        data-blockingmode="auto" type="text/javascript">
+        </script>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+
+
+
+</head>
+
+<body onload="loadPage()">
+    <!-- header -->
+    <div w3-include-html="templates/header.html"></div>
+
+    <div class="body-content">
+
+        <!-- DialogFoto -->
+        <div id="dialog" class="dialog-bg d-none">
+
+            <span class="material-symbols-outlined close" onclick="closeDialog()">
+                close
+            </span>
+
+            <div id="zoomImg"></div>
+
+        </div>
+
+
+        <!-- Hauptseite -->
+        <h1>Meine Fotogalerie</h1>
+
+        <div class="content">
+            <div class="imgContainer" id="loadphoto"></div>
+
+        </div>
+
+        <!-- Impressum -->
+        <div class="footer">
+            <a href="imprint.html">Impressum</a>
+        </div>
+
+    </div>
+</body>
+
+</html>
